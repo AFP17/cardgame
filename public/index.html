@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trashstone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="player-info">
+            <div id="player1-info">
+                <div class="health">HP: <span id="player1-health">30</span></div>
+                <div class="mana">Mana: <span id="player1-mana">1</span>/10</div>
+                <div id="player1-resources">
+                    <div class="resource">P: <span id="player1-plastic">0</span></div>
+                    <div class="resource">P: <span id="player1-paper">0</span></div>
+                    <div class="resource">G: <span id="player1-glass">0</span></div>
+                    <div class="resource">O: <span id="player1-organic">0</span></div>
+                </div>
+            </div>
+            <div id="player2-info">
+                <div class="health">HP: <span id="player2-health">30</span></div>
+                <div class="mana">Mana: <span id="player2-mana">1</span>/10</div>
+                <div id="player2-resources">
+                    <div class="resource">P: <span id="player2-plastic">0</span></div>
+                    <div class="resource">P: <span id="player2-paper">0</span></div>
+                    <div class="resource">G: <span id="player2-glass">0</span></div>
+                    <div class="resource">O: <span id="player2-organic">0</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="game-board">
+            <div id="player1-board"></div>
+            <div id="player2-board"></div>
+        </div>
+        <div id="player-hand"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

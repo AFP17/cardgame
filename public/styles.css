@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#game-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#player-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.health, .mana {
+    margin-right: 20px;
+}
+
+#game-board {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    min-height: 200px;
+}
+
+#player1-board, #player2-board {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#player-hand {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+.card {
+    width: 120px;
+    height: 180px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card:hover {
+    border-color: #007bff;
+}
+
+.card.selected {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.resource {
+    margin-right: 10px;
+}
